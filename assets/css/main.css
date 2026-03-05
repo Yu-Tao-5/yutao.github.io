@@ -3366,6 +3366,14 @@ input, select, textarea {
 	color:#444;
 }
 
+.month-divider{
+	font-size:0.9em;
+	font-weight:600;
+	margin:20px 0 8px;
+	color:#777;
+	letter-spacing:0.04em;
+	}
+
 /* image layout */
 
 .features article .image{
