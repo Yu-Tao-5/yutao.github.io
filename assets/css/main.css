@@ -3315,81 +3315,140 @@ input, select, textarea {
 
 	}
 
-	.features article {
-		display: flex;
-		align-items: flex-start;
-		gap: 24px;
-	}
-	
-	.features article .image {
-		flex: 0 0 260px;
-		height: 146px;
-		overflow: hidden;
-		border-radius: 6px;
-	}
-	
-	.features article .image img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	
-	.features article .inner {
-		flex: 1;
+	/* ===== Portfolio Timeline Layout ===== */
+
+	.features{
+		position: relative;
+		padding-left: 30px;
 	}
 
-	/* Timeline date badge next to each project title */
-	.features article .inner h4 {
-		display: flex;
-		align-items: baseline;
-		justify-content: space-between;
-		gap: 12px;
-	}
-  
-	.features article .inner h4 .date {
-		font-size: 0.8em;
-		padding: 0.2em 0.6em;
-		border: 1px solid rgba(0,0,0,0.2);
-		border-radius: 999px;
-		white-space: nowrap;
-		opacity: 0.8;
+	/* vertical timeline line */
+
+	.features:before{
+		content:"";
+		position:absolute;
+		left:10px;
+		top:0;
+		bottom:0;
+		width:2px;
+		background:rgba(0,0,0,0.12);
 	}
 
-	/* Make the portfolio list look like a vertical timeline */
-	.features {
-		position: relative;
-		padding-left: 26px;
+	/* project item */
+
+	.features article{
+		display:flex;
+		gap:28px;
+		padding:26px 0;
+		border-bottom:1px solid rgba(0,0,0,0.06);
+		position:relative;
 	}
-	
-	.features:before {
-		content: "";
-		position: absolute;
-		left: 8px;
-		top: 0;
-		bottom: 0;
-		width: 2px;
-		background: rgba(0,0,0,0.12);
+
+	/* timeline dot */
+
+	.features article:before{
+		content:"";
+		position:absolute;
+		left:-20px;
+		top:24px;
+		width:10px;
+		height:10px;
+		border-radius:50%;
+		background:#888;
 	}
-	
-	.features article {
-		position: relative;
+
+	/* image */
+
+	.features article .image{
+		flex:0 0 260px;
+		height:160px;
+		overflow:hidden;
+		border-radius:8px;
 	}
-	
-	.features article:before {
-		content: "";
-		position: absolute;
-		left: -22px;
-		top: 18px;
-		width: 10px;
-		height: 10px;
-		border-radius: 50%;
-		background: rgba(0,0,0,0.25);
+
+	.features article .image img{
+		width:100%;
+		height:100%;
+		object-fit:cover;
+		transition:transform .25s ease;
 	}
+
+	.features article:hover .image img{
+		transform:scale(1.05);
+	}
+
+	/* text */
+
+	.features article .inner{
+		flex:1;
+	}
+
+	/* title */
+
+	.features article .inner h4{
+		display:flex;
+		justify-content:space-between;
+		align-items:baseline;
+		gap:10px;
+		margin-bottom:6px;
+	}
+
+	/* date badge */
+
+	.features article .inner h4 .date{
+		font-size:0.75em;
+		padding:0.2em 0.6em;
+		border:1px solid rgba(0,0,0,0.15);
+		border-radius:999px;
+		opacity:0.8;
+	}
+
+	/* year divider */
 
 	.year-divider{
-		font-size: 1.1em;
-		font-weight: 700;
-		margin: 30px 0 10px;
-		opacity: 0.7;
-		letter-spacing: 0.05em;
+		font-size:1.2em;
+		font-weight:700;
+		margin:40px 0 10px;
+		color:#444;
 	}
+
+	/* ===== Mobile layout fix ===== */
+
+@media screen and (max-width: 768px){
+
+	.features{
+		padding-left:0;
+	}
+
+	/* hide timeline line on small screens */
+
+	.features:before{
+		display:none;
+	}
+
+	/* stack image and text */
+
+	.features article{
+		flex-direction:column;
+		gap:16px;
+	}
+
+	/* remove timeline dot */
+
+	.features article:before{
+		display:none;
+	}
+
+	/* image full width */
+
+	.features article .image{
+		width:100%;
+		height:auto;
+		flex:none;
+	}
+
+	.features article .image img{
+		height:auto;
+	}
+
+}
