@@ -3318,13 +3318,14 @@ input, select, textarea {
 	.features article {
 		display: flex;
 		align-items: flex-start;
-		gap: 20px;
+		gap: 24px;
 	}
 	
 	.features article .image {
-		flex: 0 0 220px;
-		height: 140px;
+		flex: 0 0 260px;
+		height: 146px;
 		overflow: hidden;
+		border-radius: 6px;
 	}
 	
 	.features article .image img {
@@ -3335,4 +3336,60 @@ input, select, textarea {
 	
 	.features article .inner {
 		flex: 1;
+	}
+
+	/* Timeline date badge next to each project title */
+	.features article .inner h4 {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 12px;
+	}
+  
+	.features article .inner h4 .date {
+		font-size: 0.8em;
+		padding: 0.2em 0.6em;
+		border: 1px solid rgba(0,0,0,0.2);
+		border-radius: 999px;
+		white-space: nowrap;
+		opacity: 0.8;
+	}
+
+	/* Make the portfolio list look like a vertical timeline */
+	.features {
+		position: relative;
+		padding-left: 26px;
+	}
+	
+	.features:before {
+		content: "";
+		position: absolute;
+		left: 8px;
+		top: 0;
+		bottom: 0;
+		width: 2px;
+		background: rgba(0,0,0,0.12);
+	}
+	
+	.features article {
+		position: relative;
+	}
+	
+	.features article:before {
+		content: "";
+		position: absolute;
+		left: -22px;
+		top: 18px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: rgba(0,0,0,0.25);
+	}
+
+	.year-divider{
+		font-size: 1.1em;
+		font-weight: 700;
+		margin: 30px 0 10px;
+		opacity: 0.7;
+		letter-spacing: 0.05em;
 	}
