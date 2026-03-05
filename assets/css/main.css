@@ -3404,13 +3404,6 @@ input, select, textarea {
 
 /* date badge */
 
-.date{
-	font-size:0.75em;
-	padding:0.2em 0.6em;
-	border:1px solid rgba(0,0,0,0.15);
-	border-radius:999px;
-}
-
 /* ===== Mobile layout ===== */
 
 @media screen and (max-width: 768px){
