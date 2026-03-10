@@ -3352,16 +3352,19 @@ input, select, textarea {
 .features article .image{
 	display: block;
 	width: 100%;
-	max-width: 420px;
+	max-width: 380px;
+	aspect-ratio: 16/9;
 	margin: 0 0 0.9em 0;
 	padding-right: 0;
+	overflow: hidden;
+	border-radius: 10px;
 }
 
 .features article .image img{
 	display: block;
 	width: 100%;
-	height: auto;
-	border-radius: 10px;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* text below */
