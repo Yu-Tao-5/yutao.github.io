@@ -3324,28 +3324,28 @@ input, select, textarea {
 /* year label */
 .year-divider{
 	position: sticky;
-	top: 70px;
+	top: 0;
 	z-index: 3;
 	background: #f4f4f4;
-	font-size: 1.6em;
+	font-size: 1.35em;
 	font-weight: 700;
 	color: #444;
-	padding: 0.2em 0 0.35em 0;
-	margin: 35px 0 10px 0;
-	border-bottom: 1px solid rgba(0,0,0,0.08);
+	padding: 0.2em 0;
+	margin: 1.2em 0 0.35em 0;
+	line-height: 1.2;
 }
 
-/* month label */
 .month-divider{
 	position: sticky;
-	top: 125px;
+	top: 2.2em;
 	z-index: 2;
 	background: #f4f4f4;
-	font-size: 1em;
+	font-size: 0.95em;
 	font-weight: 600;
 	color: #777;
-	padding: 0.35em 0;
-	margin: 12px 0 8px 0;
+	padding: 0.15em 0 0.2em 0;
+	margin: 0 0 0.6em 0;
+	line-height: 1.2;
 }
 
 /* project layout */
@@ -3399,13 +3399,13 @@ input, select, textarea {
 @media screen and (max-width: 768px){
 
 	.year-divider{
-		top: 0.5em;
-		font-size: 1.3em;
+		top: 0;
+		font-size: 1.15em;
 	}
-
+	
 	.month-divider{
-		top: 3.2em;
-		font-size: 0.95em;
+		top: 2em;
+		font-size: 0.9em;
 	}
 
 	.features article{
