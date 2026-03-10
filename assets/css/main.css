@@ -3385,3 +3385,19 @@ input, select, textarea {
 	margin-bottom: 0;
 	line-height: 1.8;
 }
+
+.tags{
+	margin-top: 0.6em;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.tags span{
+	font-size: 0.75em;
+	padding: 4px 10px;
+	border-radius: 20px;
+	background: rgba(0,0,0,0.06);
+	color: #555;
+	font-weight: 500;
+}
