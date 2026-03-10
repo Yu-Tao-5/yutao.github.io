@@ -9,21 +9,10 @@ The website presents my **research projects, academic background, and technical 
 
 ## 📂 Repository Structure
 .
-├── index.html        # Main webpage
-├── images/           # Images used on the website
-├── assets/           # Static resources (CSS, icons, etc.)
+├── index.html        # The main entry point of the website. It defines the structure and content of the homepage.
+├── images/           # Contains images used throughout the website, including project illustrations and profile visuals.
+├── assets/           # Stores static resources such as stylesheets, icons, or additional frontend components used by the website.
 └── README.md
-
-### Folder Description
-
-**index.html**  
-The main entry point of the website. It defines the structure and content of the homepage.
-
-**images/**  
-Contains images used throughout the website, including project illustrations and profile visuals.
-
-**assets/**  
-Stores static resources such as stylesheets, icons, or additional frontend components used by the website.
 
 ## 🛠 Technologies Used
 
