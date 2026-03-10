@@ -3340,54 +3340,52 @@ input, select, textarea {
 	line-height: 1.2;
 }
 
-/* project layout: image on top, text below */
+/* project card layout */
 .features article{
-	display: block;
-	padding: 0 0 2.2em 0;
-	margin: 0 0 2.2em 0;
+	display: grid;
+	grid-template-columns: 320px minmax(0, 1fr);
+	gap: 28px;
+	align-items: start;
+	padding: 0 0 1.6em 0;
+	margin: 0 0 1.6em 0;
 	border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
 /* image */
 .features article .image{
 	display: block;
-	width: 100%;
-	max-width: 520px;
-	margin: 0 0 1em 0;
+	width: 320px;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	border-radius: 10px;
 	padding-right: 0;
 }
 
 .features article .image img{
 	display: block;
 	width: 100%;
-	height: auto;
-	border-radius: 10px;
-	transition: transform 0.25s ease;
-}
-
-.features article:hover .image img{
-	transform: scale(1.01);
+	height: 100%;
+	object-fit: cover;
 }
 
 /* text */
 .features article .inner{
-	display: block;
-	width: 100%;
-	max-width: 900px;
+	min-width: 0;
 }
 
 .features article .inner h4{
-	margin-bottom: 0.45em;
-	line-height: 1.35em;
+	margin-bottom: 0.4em;
+	line-height: 1.35;
 }
 
 .features article .inner p{
 	margin-bottom: 0;
-	line-height: 1.8;
+	line-height: 1.75;
 }
 
+/* tags */
 .tags{
-	margin-top: 0.6em;
+	margin-top: 0.75em;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 8px;
@@ -3396,8 +3394,23 @@ input, select, textarea {
 .tags span{
 	font-size: 0.75em;
 	padding: 4px 10px;
-	border-radius: 20px;
+	border-radius: 999px;
 	background: rgba(0,0,0,0.06);
 	color: #555;
 	font-weight: 500;
+	line-height: 1.2;
+}
+
+/* mobile */
+@media screen and (max-width: 768px){
+
+	.features article{
+		grid-template-columns: 1fr;
+		gap: 14px;
+	}
+
+	.features article .image{
+		width: 100%;
+	}
+
 }
