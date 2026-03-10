@@ -3352,8 +3352,8 @@ input, select, textarea {
 .features article .image{
 	display: block;
 	width: 100%;
-	max-width: 760px;
-	margin: 0 0 1.2em 0;
+	max-width: 520px;
+	margin: 0 0 1em 0;
 	padding-right: 0;
 }
 
