@@ -35,19 +35,6 @@ This website is built using simple and lightweight web technologies:
 
 The goal is to maintain a **clean, lightweight, and easily maintainable personal webpage** without complex frameworks.
 
-## 🚀 Deployment
-
-The website is deployed using **GitHub Pages**.
-
-To deploy the website:
-
-1. Push changes to the `main` branch of this repository.
-2. GitHub Pages automatically builds and publishes the site.
-
-The live website will be available at:
-
-https://yu-tao-5.github.io/yutao.github.io/
-
 ## 📌 Purpose
 
 This website serves as a **central hub for my academic and technical work**, including:
@@ -56,7 +43,3 @@ This website serves as a **central hub for my academic and technical work**, inc
 - Data processing pipelines
 - AI and NLP experiments
 - Documentation of technical work
-
-- ## 📄 License
-
-This project is intended for personal academic use.
