@@ -3323,10 +3323,6 @@ input, select, textarea {
 
 /* year label */
 .year-divider{
-	position: sticky;
-	top: 0;
-	z-index: 3;
-	background: #f4f4f4;
 	font-size: 1.35em;
 	font-weight: 700;
 	color: #444;
@@ -3336,10 +3332,6 @@ input, select, textarea {
 }
 
 .month-divider{
-	position: sticky;
-	top: 2.2em;
-	z-index: 2;
-	background: #f4f4f4;
 	font-size: 0.95em;
 	font-weight: 600;
 	color: #777;
