@@ -3314,8 +3314,7 @@ input, select, textarea {
 			}
 
 	}
-
-//* ===== Portfolio grouped by time ===== */
+/* ===== Portfolio grouped by time ===== */
 
 .features{
 	padding-left: 0;
@@ -3331,6 +3330,7 @@ input, select, textarea {
 	line-height: 1.2;
 }
 
+/* month label */
 .month-divider{
 	font-size: 0.95em;
 	font-weight: 600;
@@ -3340,41 +3340,40 @@ input, select, textarea {
 	line-height: 1.2;
 }
 
-/* project layout */
+/* project layout: image on top, text below */
 .features article{
-	display: flex;
-	align-items: flex-start;
-	gap: 32px;
-	padding: 26px 0 30px 0;
-	border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-/* image wrapper */
-.features article .image{
-	flex: 0 0 320px;
-	width: 320px;
-	padding-right: 0;
 	display: block;
+	padding: 0 0 2.2em 0;
+	margin: 0 0 2.2em 0;
+	border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
-/* image itself */
+/* image */
+.features article .image{
+	display: block;
+	width: 100%;
+	max-width: 760px;
+	margin: 0 0 1.2em 0;
+	padding-right: 0;
+}
+
 .features article .image img{
 	display: block;
 	width: 100%;
 	height: auto;
-	border-radius: 8px;
+	border-radius: 10px;
 	transition: transform 0.25s ease;
 }
 
-/* hover */
 .features article:hover .image img{
-	transform: scale(1.02);
+	transform: scale(1.01);
 }
 
 /* text */
 .features article .inner{
-	flex: 1;
-	min-width: 0;
+	display: block;
+	width: 100%;
+	max-width: 900px;
 }
 
 .features article .inner h4{
@@ -3385,33 +3384,4 @@ input, select, textarea {
 .features article .inner p{
 	margin-bottom: 0;
 	line-height: 1.8;
-}
-
-/* mobile */
-@media screen and (max-width: 768px){
-
-	.year-divider{
-		top: 0;
-		font-size: 1.15em;
-	}
-	
-	.month-divider{
-		top: 2em;
-		font-size: 0.9em;
-	}
-
-	.features article{
-		flex-direction: column;
-		gap: 16px;
-	}
-
-	.features article .image{
-		width: 100%;
-		flex: none;
-	}
-
-	.features article .image img{
-		width: 100%;
-		height: auto;
-	}
 }
